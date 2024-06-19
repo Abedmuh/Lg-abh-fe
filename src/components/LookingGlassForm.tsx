@@ -87,6 +87,7 @@ export default function LookingGlass() {
               <div className="grid grid-flow-row auto-rows-max">
                 <label htmlFor="address">Target IP</label>
                 <input
+                className="bg-gray-200 rounded-md"
                   type="text"
                   name="address"
                   id="address"

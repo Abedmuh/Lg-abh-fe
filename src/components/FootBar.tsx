@@ -1,18 +1,31 @@
 import imgReact from "../assets/react.svg";
+import { FiMail, FiPhoneCall, FiGlobe, FiNavigation } from "react-icons/fi";
 
 export default function FootBar() {
   return (
     <>
-      <section className="grid grid-cols-5 bg-rose-700 text-white p-7">
-        <div className="col-span-2 mr-7">
+      <section className="grid grid-cols-5 bg-maincolor text-white px-14 py-24">
+        <div className="col-span-2 mr-40">
           <h5>PT. Abhinawa Sumberdaya Asia</h5>
-          <h5>abhinawa@abhinawa.co.id</h5>
-          <h5>+62 21-68-4031</h5>
-          <h5>www.abinawanetwork.com</h5>
-          <h5>
-            Menara Kadin, 20th floor, JL.HR. Rasuna Said, Block X-5, East
-            Kuningan, Setiabudi, South Jakarta, Indonesia 12950
-          </h5>
+          <div className="flex items-center space-x-2">
+            <FiMail className="text-xl" />
+            <a href="mailto:abhinawa@abhinawa.co.id">abhinawa@abhinawa.co.id</a>
+          </div>
+          <div className="flex items-center space-x-2 ">
+            <FiPhoneCall className="text-xl" />
+            <a href="#">+62 21-68-4031</a>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FiGlobe className="text-xl" />
+            <a href="#">www.abinawanetwork.com</a>
+          </div>
+          <div className="flex space-x-2">
+          <FiNavigation className="text-xl shrink-0" />
+            <a href="#">
+               Menara Kadin, 20th floor, JL.HR. Rasuna Said, Block X-5, East
+              Kuningan, Setiabudi, South Jakarta, Indonesia 12950
+            </a>
+          </div>
         </div>
         <div>
           <h3>Services</h3>

@@ -6,36 +6,59 @@ import Navbar from "./components/Navbar";
 export default function App() {
   return (
     <>
-        <Navbar />
-        <Jumbotron />
+      <Navbar />
+      <Jumbotron />
       <main>
         <div className="flex justify-center mx-auto flex-col max-w-5xl py-5">
-          <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            excepturi eum similique iste nihil aspernatur nam labore autem
-            repellat cum illo sit temporibus enim quibusdam, modi illum fugiat
-            numquam sed quam nemo ipsam placeat! Voluptatum molestiae ea
-            suscipit dolor porro corrupti, autem accusamus omnis commodi
-            dignissimos adipisci facere tempore enim.
-          </h1>
+          <p>
+            Looking Glass are online tools that allow users to run diagnostic
+            tests on the network from the perspective of the our infrastructure.
+            By using a Looking Glass tool, users can gain insights into network
+            performance and routing from various locations within the ISP's
+            network, helping to identify and diagnose network issues, verify
+            routing configurations, and understand how traffic is being routed
+            through the provider's network. These tools are especially useful
+            for troubleshoot connectivity problems, optimize network
+            performance, and ensure efficient data routing.
+          </p>
         </div>
         <LookingGlass />
         <section className="flex justify-center mx-auto flex-col max-w-5xl py-5">
           <div>
-            <h6>Ping</h6>
+            <h3>Ping</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque ipsam, magni eaque, officia harum asperiores corrupti,
-              quae perspiciatis quisquam suscipit temporibus adipisci deleniti
-              molestiae? A fugit iusto sapiente tempora ab, voluptatem omnis nam
-              optio atque adipisci nemo exercitationem id ullam harum mollitia
-              nobis, voluptates, dolorem perferendis accusantium inventore modi
-              sunt.
+              Ping is a network diagnostic utility that uses the Internet
+              Control Message Protocol (ICMP) to test the reachability of a host
+              on an IP network. By sending ICMP Echo Request messages to the
+              target host and waiting for Echo Reply messages, it measures the
+              round-trip time (RTT) for messages to travel to the destination
+              and back, providing an indication of latency. Ping is widely used
+              for troubleshooting network connectivity issues, identifying
+              packet loss, and determining network performance. The output
+              typically includes statistics on the number of packets sent,
+              received, and lost, as well as the minimum, maximum, and average
+              RTT. It is an essential tool for network administrators to
+              diagnose and resolve network problems.
             </p>
           </div>
           <div>
-            <h6>Traceroute</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam inventore minima, dolores est atque suscipit voluptatibus expedita ad, iusto deleniti nobis id consequatur dignissimos voluptate unde iure sunt eaque corrupti eum. Magnam ratione, iusto modi distinctio nobis aliquam suscipit commodi laborum repellendus necessitatibus consequatur odio at totam ipsam excepturi aliquid.</p>
+            <h3>Traceroute</h3>
+            <p>
+              Traceroute is a network diagnostic tool used to track the pathway
+              packets take from one computer to another over an IP network. It
+              works by sending a sequence of Internet Control Message Protocol
+              (ICMP) Echo Request packets (or UDP packets on some systems) to
+              the destination with incrementally increasing Time-to-Live (TTL)
+              values. Each router along the path decrements the TTL by one and,
+              when it reaches zero, the router sends an ICMP Time Exceeded
+              message back to the source. By examining these responses,
+              traceroute maps the route and measures the transit delays of
+              packets across the network. The output typically lists each hop's
+              IP address and the round-trip time (RTT) for each probe sent,
+              helping identify where delays or packet losses occur, which is
+              crucial for troubleshooting network performance issues and
+              diagnosing routing problems.
+            </p>
           </div>
         </section>
       </main>
